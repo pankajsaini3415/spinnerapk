@@ -4,14 +4,11 @@ import {
   Text,
   StyleSheet,
   Animated,
-  Dimensions,
   ScrollView,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { colors, gradients } from '../constants/colors';
 import { config } from '../constants/config';
-
-const { width } = Dimensions.get('window');
 
 interface WingoResult {
   id: number;
@@ -70,6 +67,7 @@ export const WingoResultCard: React.FC<WingoResultCardProps> = ({ data }) => {
 
       Animated.stagger(50, animations).start();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   if (!data || !data.results || data.results.length === 0) {
@@ -212,7 +210,6 @@ const styles = StyleSheet.create({
   },
   glassOverlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    backdropFilter: 'blur(10px)',
     padding: config.spacing.md,
   },
   header: {

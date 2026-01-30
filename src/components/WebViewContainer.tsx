@@ -133,8 +133,8 @@ export const WebViewContainer: React.FC<WebViewContainerProps> = ({
       } else {
         onWingoDataExtracted(data);
       }
-    } catch (error) {
-      console.error('Failed to parse message from WebView:', error);
+    } catch (err) {
+      console.error('Failed to parse message from WebView:', err);
     }
   };
 

@@ -122,6 +122,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
       clearTimeout(timer);
       StatusBar.setHidden(false);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const rotation = rotateAnim.interpolate({

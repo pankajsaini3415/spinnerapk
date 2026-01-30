@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>NocaNumberHack</string>
+	<string>Noca Number Hack</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -28,9 +28,8 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
-		<false/>
+		<true/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
